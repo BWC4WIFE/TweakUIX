@@ -15,11 +15,14 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x' # Adjust based on your project
-      - name: Restore Dependencies
-  run: dotnet restore TweakUIX/src/TUIX.sln
-- name: Build Solution
-  run: dotnet build TweakUIX/src/TUIX.sln --configuration Release
+
+    - name: Restore Dependencies
+      run: dotnet restore TweakUIX/src/TUIX.sln
+
+    - name: Build Solution
+      run: dotnet build TweakUIX/src/TUIX.sln --configuration Release
