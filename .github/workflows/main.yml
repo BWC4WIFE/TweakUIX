@@ -22,4 +22,4 @@ jobs:
         dotnet-version: '8.0.x' # Adjust based on your project
 
     - name: Build Solution
-      run: dotnet build TweakUIX/src/TUIX.sln --configuration Release
+      run: dotnet build BWC4WIFE/TweakUIX/src/TUIX.sln --configuration Release
